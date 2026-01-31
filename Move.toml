@@ -1,0 +1,17 @@
+[package]
+name = "signal_clash_contract"
+edition = "2024.beta"
+license = "MIT"
+
+[dependencies.Pyth]
+git = "https://github.com/pyth-network/pyth-crosschain.git"
+subdir = "target_chains/sui/contracts"
+rev = "sui-contract-testnet"
+
+[dependencies.Wormhole]
+git = "https://github.com/wormhole-foundation/wormhole.git"
+subdir = "sui/wormhole"
+rev = "sui/testnet"
+
+[addresses]
+signal_clash = "0x0"
